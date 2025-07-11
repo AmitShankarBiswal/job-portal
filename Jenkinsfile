@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/AmitShankarBiswal/job-portal.git'
+                git branch: 'main', url: 'https://github.com/AmitShankarBiswal/job-portal.git'
             }
         }
 
@@ -34,3 +34,4 @@ pipeline {
         }
     }
 }
+
