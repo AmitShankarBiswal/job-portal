@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+    <p>Find your dream job or post a vacancy</p>
+  </header>
+
+  <section class="form-section">
+    <h2>Post a Job</h2>
+    <form id="jobForm">
+      <input type="text" id="title" placeholder="Job Title" required />
+      <input type="text" id="company" placeholder="Company Name" required />
+      <textarea id="description" placeholder="Job Description" required></textarea>
+      <button type="submit">Post Job</button>
+    </form>
+  </section>
+
+  <section class="jobs-section">
+    <h2>Available Jobs</h2>
+    <div id="jobsContainer"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Job Portal | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
